@@ -1,0 +1,64 @@
+.destination {
+    background-image: url(../assets/destination/background-destination-mobile.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 6.4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /// styles of elements 
+    &__first {
+        margin: 64px 0 0 0;
+    }
+
+    &__img {
+        width: 170px;
+        height: 170px;
+        margin: 32px 0 26px;
+    }
+
+    &__sect {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__list {
+        width: 240px;
+        height: 28px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 0 20px 0;
+    }
+
+    &__el {
+        height: 100%;
+        width: auto;
+        color: #D0D6F9;
+
+        &--actif {
+            color: #fff;
+            border-bottom: 3px solid #fff;
+        }
+    }
+
+    &__boxInfo {
+        width: 100%;
+        border-top: 1px solid #383B4B;
+        margin: 32px 0;
+
+        &>ul {
+            margin: 32px 0 ;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 32px;
+        }
+    }
+}

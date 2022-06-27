@@ -1,0 +1,117 @@
+.head {
+    //width: 100%;
+    width: calc(100vw - 48px);
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    // position : absolute;
+    top: 24px;
+    left: 24px;
+    overflow-y: hidden;
+
+    &__img{
+        width: 40px;
+        height: 40px;
+    }
+    &__btnMenu {
+        width: 24px;
+        height: 21px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: none;
+        background-color: transparent;
+
+        &>span {
+            width: 100%;
+            height: 3px;
+            background-color: #D0D6F9;
+        }
+    }
+
+    &__nav {
+        display: none;
+    }
+}
+
+
+@media(min-width:600px) {
+
+
+    .head {
+        width: calc(100vw - 5vw);
+        height: 96px;
+        // position : absolute;
+        top: 0;
+        left: 5vw;
+        &__img{
+            width: 48px;
+            height: 48px;
+        }
+        &__btnMenu {
+            display: none;
+        }
+
+        &__nav {
+            display: block;
+            height: 100%;
+            min-width: 450px;
+            width: 60%;
+            padding: 39px 46px;
+            background-color: #ffffff04;
+        }
+    }
+
+    .nav {
+
+        &__list {
+            
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        &__el{
+            height: 51px;
+            cursor: pointer;
+            transition: 0.3s ease-in;
+            &:hover{
+                border-bottom: 3px solid #ffffff50;
+                transition: 0.3s ease-in;
+            }
+            &--actif{
+                border-bottom: 3px solid #ffffff;
+                transition: 0.3s ease-in;
+            }
+        }
+    }
+}
+
+
+@media(min-width:1100px) {
+
+
+    .head {
+        width: calc(100vw - 2.9vw);
+        // position : absolute;
+        top: 40px;
+        left: 2.9vw;
+        &__nav {
+            min-width: 880px;
+            padding: 39px 11.25vw 39px 125px;
+        }
+    }
+
+    .nav {
+
+        &__el{
+            height: 57px;
+           
+        }
+    }
+}

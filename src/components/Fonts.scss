@@ -1,0 +1,152 @@
+.title {
+    font-family: 'Barlow', sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 125%;
+    color: #ffffff;
+    text-transform: uppercase;
+    &--2 {
+        font-size: 100px;
+    }
+
+    &--3 {
+        font-size: 56px;
+    }
+
+    &--4 {
+        font-size: 32px;
+    }
+
+    &--5 {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 28px;
+        letter-spacing: 4.725px;
+    }
+    &--belfair{
+        font-family: 'Bellefair', sans-serif;
+    }
+}
+
+.subtitle {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+    &--2 {
+        font-size: 14px;
+        letter-spacing: 2.35px;
+    }
+    &--nub{
+        &>span{
+            color: #ffffff25;
+        }  
+    }
+}
+
+.nav__link {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #ffffff;
+    text-transform: uppercase;
+    &>span{
+        font-weight: 900;
+    }
+}
+
+.text {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 178%;
+    color: #ffffff;
+    
+    &--center{
+        text-align: center;
+    }
+}
+
+
+@media(min-width : 600px){
+    .title {
+        font-size: 150px;
+
+        &--2 {
+            font-size: 100px;
+        }
+    
+        &--3 {
+            font-size: 56px;
+        }
+    
+        &--4 {
+            font-size: 32px;
+        }
+    
+        &--5 {
+            font-size: 28px;
+        }
+    }
+    
+    .subtitle {
+        font-size: 20px;
+    
+        &--2 {
+            font-size: 14px;
+        }
+    }
+    
+    .nav__link {
+        font-size: 14px;
+        letter-spacing: 2.7px;
+    }
+    
+    .text {
+        font-size: 16px;
+    }
+}
+
+@media(min-width : 1100px){
+    .title {
+        font-size: 150px;
+
+        &--2 {
+            font-size: 100px;
+        }
+    
+        &--3 {
+            font-size: 56px;
+        }
+    
+        &--4 {
+            font-size: 32px;
+        }
+    
+        &--5 {
+            font-size: 28px;
+        }
+    }
+    
+    .subtitle {
+        font-size: 28px;
+    
+        &--2 {
+            font-size: 14px;
+        }
+    }
+    
+    .nav__link {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+    
+    .text {
+        font-size: 18px;
+    }
+}
