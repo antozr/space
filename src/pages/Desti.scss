@@ -41,10 +41,12 @@
         height: 100%;
         width: auto;
         color: #D0D6F9;
+        transition: 0.3s;
 
         &--actif {
             color: #fff;
             border-bottom: 3px solid #fff;
+            transition: 0.6s;
         }
     }
 
@@ -59,6 +61,11 @@
             flex-direction: column;
             align-items: center;
             row-gap: 32px;
+
+            &>li{
+                text-align: center;
+                
+            }
         }
     }
 }

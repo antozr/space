@@ -25,6 +25,9 @@
     &--belfair{
         font-family: 'Bellefair', sans-serif;
     }
+    &--center{
+        text-align: center;
+    }
 }
 
 .subtitle {
@@ -43,6 +46,13 @@
         &>span{
             color: #ffffff25;
         }  
+    }
+    &--big{
+        font-size: 28px;
+        margin: 12px 0 0 0;
+    }
+    &--blue{
+        color: #D0D6F9;
     }
 }
 
@@ -67,6 +77,12 @@
     line-height: 178%;
     color: #ffffff;
     
+    &--center{
+        text-align: center;
+    }
+    &--blue{
+        color: #D0D6F9;
+    }
     &--center{
         text-align: center;
     }
