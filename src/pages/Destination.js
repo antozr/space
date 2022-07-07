@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import Moon from '../assets/destination/image-moon.webp'
+import Mars from '../assets/destination/image-mars.webp'
+import Europa from '../assets/destination/image-europa.webp'
+import Titan from '../assets/destination/image-titan.webp'
 import '../components/Fonts.scss'
 import './Desti.scss'
 import Data from '../data/data.json'
@@ -10,18 +13,15 @@ function Destination() {
 
     const [usesat, setUseSat] = useState("Moon")
 
-    console.log(Data)
-    console.log(Data.destinations[0].name)
+    // console.log(Data)
+    // console.log(Data.destinations[0].name)
     var DataJson = Data.destinations;
-    console.log(DataJson);
     var nameSatelit = "Moon";
-    localStorage.setItem('linkSat',' ')
-
+    const ImgSat = [Moon, Mars, Europa, Titan]
 
 
     function createTabSatFiltre (sat){
         const DataSat = DataJson.filter((el) => el.name === sat)
-        DataSat.push(DataSat)
         var dataSat = DataSat
         console.log(DataSat);
         return (
@@ -50,12 +50,20 @@ function Destination() {
 
     if (usesat === "Moon") {
         var dataSat = createTabSatFiltre ("Moon")
+        var moonImg = ImgSat[0]
+        
+        //var satImg = dataSat.images.webp
     } else if (usesat === "Mars") {
         var dataSat = createTabSatFiltre ("Mars")
+        console.log(dataSat);
+        var moonImg = ImgSat[1]
     } else if (usesat === "Europa") {
         var dataSat = createTabSatFiltre ("Europa")
+        console.log(dataSat);
+        var moonImg = ImgSat[2]
     } else if (usesat === "Titan") {
         var dataSat =  createTabSatFiltre ("Titan")
+        var moonImg = ImgSat[3]
     }
 
     
@@ -64,7 +72,7 @@ function Destination() {
         <div className="destination">
             <div className="destination__first">
                 <h2 className="subtitle subtitle--nub"><span>01</span>&nbsp;Pick your destination</h2>
-                <img src={Moon} alt="The astrals planete or moon." className="destination__img" />
+                <img src={moonImg} alt="The astrals planete or moon." className="destination__img" />
             </div>
             <section className="destination__sect">
                 <ul className="destination__list">

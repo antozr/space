@@ -1,0 +1,110 @@
+.crew {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 6.4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../assets/crew/background-crew-mobile.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+
+    &--list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__first {
+        margin: 64px 0 0 0;
+    }
+
+    &__imgBox {
+        width: 100%;
+        height: 222px;
+        border-bottom: 1px solid #383B4B;
+        display: flex;
+        justify-content: center;
+        margin: 32px 0;
+    }
+
+    &__img {
+        height: 222px;
+        width: auto;
+    }
+
+    &__listSlider {
+        width: 90px;
+        height: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    &__elSlider {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #ffffff18;
+        transition: 0.3s ease-out;
+        transition-delay: 0.2s;
+
+        &--actif {
+            background-color: #ffffff;
+            transition: 0.2s ease-in;
+        }
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 32px 0 0 0;
+
+        &>h1 {
+            margin: 8px 0 16px 0;
+        }
+    }
+
+}
+
+@media(min-width:600px) {
+    .crew {
+        background-image: url(../assets/crew/background-crew-tablet.jpg);
+        padding: 5vw;
+        //align-items: flex-start;
+        overflow: hidden;
+        &>h2 {
+            margin: 9vh 0 0 0;
+            width: 100%;
+            left: 0;
+        }
+        &--list{
+            flex-direction: column-reverse;
+            margin: 60px 0 0 0;
+        }
+        &__img {
+            height: 572px;
+            margin: 40px auto 0;
+        }
+        &__listSlider {
+           margin: 40px 0 0 0 ;
+    
+        }
+        &__box{
+            &>p{
+                max-width: 55ch;
+            }
+        }
+    }
+}
+
+@media(min-width:1100px) {
+    .crew {
+        background-image: url(../assets/crew/background-crew-desktop.jpg);
+        padding: 40px 11.5vw 131px 11.5vw;
+    }
+}

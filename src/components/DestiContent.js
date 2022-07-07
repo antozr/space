@@ -3,7 +3,7 @@ import React from 'react'
 function Desti({name, description, dist, voyage}) {
     return (
         <div className='desti'>
-            <h2 className="title title--2 title--center">
+            <h2 className="title title--belfair title--3 title--center">
                 {name}
             </h2>
             <p className="text text--blue text--center">
